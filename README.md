@@ -1,6 +1,6 @@
 # chatMango
 ## 오늘의 운세를 말해주는 귀여운 강아지 챗봇
-## chatGPT API를 활용한 서버리스 서비스
+## chatGPT API와 AWS Rambda를 활용한 Serverless 서비스
 
 - FrontEnd : HTML (CloudType 배포)
 - BackEnd : node.js (AWS Rambda 배포)
