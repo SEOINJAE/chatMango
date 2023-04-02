@@ -8,4 +8,5 @@
 
 ## 통신
 유저 질문 -> AWS Rambda API BackEnd 질문 GET -> chatGPT API에 질문 요청 및 응답
+
 -> AWS Rambda API BackEnd chatGPT 답변 값 GET -> FrontEnd response 답변 화면 표시   
