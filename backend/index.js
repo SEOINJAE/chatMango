@@ -1,4 +1,4 @@
-const apiKey = ""
+const apiKey = "Your chatGPT API key need"
 
 const serverless = require('serverless-http');
 const { Configuration, OpenAIApi } = require("openai");
@@ -13,17 +13,20 @@ const openai = new OpenAIApi(configuration);
 
 //CORS 이슈 해결
 let corsOptions = {
-    origin: 'https://chatmango.pages.dev/',
+    origin: 'Your hompage URL need',
     credentials: true
 }
 app.use(cors(corsOptions));
+
+// static file serving
+app.use(express.static('frontend'));
 
 //POST 요청 받을 수 있게 만듬
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 // POST method route
-app.post('/fortuneTell', async function (req, res) {
+app.post('/mongoTell', async function (req, res) {
     let { myDateTime, userMessages, assistantMessages} = req.body
 
     let todayDateTime = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
